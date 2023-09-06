@@ -1,0 +1,339 @@
+/* PAGE LAYOUT 
+Consistant design for each page layout block. 
+*/
+
+
+/*   ----- Variables  -----  */
+:root {
+    --EggWhite: rgb(230, 226, 223, 1.0);
+    --EggWhiteT: rgb(230, 226, 223, 0.5);
+    --BlueSky: rgb(161, 155, 159, 1.0);
+    --SandyBeach: rgb(140, 124, 93, 0.6);
+    --ForestGreen: rgb(42, 63, 24, 1.0);
+    --ForestGreenT: rgb(42, 63, 24, 0.4);
+    --MossyGreen: rgb(16, 43, 22, 1.0);
+    --MossyGreenT: rgb(16, 43, 22, .7);
+  }
+
+
+body {
+    background-image: url(images/rocky-mountain-national-park-2021.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Merriweather', serif;
+    font-size: 1.05em;
+    color: var(--MossyGreen);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    max-width: 2000px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    background-color: var(--EggWhiteT);
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    border: 10px solid var(--BlueSky);
+    border-radius: 5px 5px 5px 5px; 
+    color: var(--ForestGreen);
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header img {width: 12%; padding: 10px 2px 2px 2px;}
+  
+  main {
+    background-color: var(--EggWhite);
+    padding: 10px 10px 10px 10px;
+    border: 5px solid var(--SandyBeach);
+    border-radius: 10px 10px 10px 10px; 
+    margin: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+      }
+  
+  section {
+  background-color: var(--EggWhite);
+  }
+  article {
+    border-top: 3px dashed var(--ForestGreenT);
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: left;
+  }
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    color: var(--ForestGreen);
+    text-align: right;
+    border:2px solid var(--BlueSky);
+    border-radius: 1px 1px 1px 1px; 
+    background-color: var(--EggWhite);
+    padding: 10px 10px 10px 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    margin-top: 10px;
+    display: flex;
+  }
+  nav a {
+    display: flex;
+    background-color: var(--EggWhite);
+    border:2px solid var(--SandyBeach);
+    border-radius: 5px 5px 5px 5px; 
+    color: var(--MossyGreen);
+    font-size: 1.1em;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav a:hover {
+    display: flex;
+    background-color: var(--BlueSky);
+  }
+  
+  .local {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .local a {
+    display: flex;
+    background-color: var(--ForestGreenT);
+    border: 1px solid var(--BlueSky);
+    border-radius: 5px 5px 5px 5px; 
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .local a:hover {
+    display: flex;
+    background-color: var(--EggWhiteT);
+    border: 1px solid var(--BlueSky);
+  }
+
+  /*  -----  Typography  ----- */
+p {  text-align: center;
+}
+br {}
+ol, ul, dl {
+  text-align: left;
+}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {} 
+h1 {font-family: 'Kaisei Opti', serif;}
+h2 { text-align: center;}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+q {}
+cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Table ----- */
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: large;
+}
+caption {
+  padding: 10px;
+}
+thead {}
+tbody {}
+tfoot {}
+tr {
+
+}
+tr:nth-child(even) {
+  background-color: var(--EggWhiteT);
+}
+th {
+  background-color: var(--BlueSky);
+  color: var(--MossyGreenT);
+  padding: 10px;
+  border: 1px solid var(--EggWhiteT);
+}
+td {
+  background-color: var(--SandyBeach);
+  color: MossyGreenT;
+  padding: 10px;
+  border: 1px solid var(--EggWhiteT);
+}
+td:nth-child(1) {
+  background-color: var(--ForestGreenT);
+}
+colgroup {}
+data {}
+datalist {}
+
+/*  ----- Form ----- */
+form {}
+fieldset {
+border: 2.5px solid var(--BlueSky);
+margin: 1%;
+padding: 1%;
+}
+legend {
+  color: var(--ForestGreen);
+  font-size: 120%;
+  font-weight: 3px;
+}
+label {
+padding: 1%;
+}
+button {
+  font-family: inherit;
+  border: 2px solid var(--MossyGreen);
+  color: var(--MossyGreen);
+  width: 100%;
+  height: 100%;
+  font-size: 110%;
+  margin: auto;
+}
+button:hover{
+  background-color: var(--BlueSky);
+  border: 2px solid var(--MossyGreenT);
+}
+input{
+  font-family: inherit;
+  color: var(--MossyGreen);
+  border: 2px solid var(--BlueSkyT);
+}
+input[type="date"] {
+  width: 60%;
+  height: 50%;
+  font-size: 110%;
+  text-align: center
+}
+input[type="text"] {
+  width: 70%;
+  height: 50%;
+  font-size: 110%;
+  text-align: center
+}
+input[type="string"] {
+  width: 60%;
+  height: 50%;
+  font-size: 110%;
+  text-align: center
+}
+input[type="number"] {
+  width: 60%;
+  font-size: 110%;
+  text-align: center
+}
+::placeholder {
+  color: var(--MossyGreenT);
+}
+output {}
+meter {}
+progress {}
+select {
+  color: var(--BlueSkyT);
+  border: 3x solid var(--BlueSkyT);
+}
+  optgroup {}
+  option {}
+textarea {
+  padding: 0.5%;
+  margin-left: 1.5%;
+  margin-top: 1%;
+  width: 96%;
+  height: 150px;
+}
+
+/* ----- Media ----- */
+figure {}
+figcaption {}
+figure img {}
+svg {}
+picture {}
+source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery { 
+display: flex;
+flex-flow: row wrap;
+}
+.gallery figure {
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+border: 5px solid var(--MossyGreenT);
+}
+.gallery img {
+width: 100%;
+}
+.gallery figcaption {
+display: grid;
+padding: 2px;
+text-align: center;
+}
+
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+

@@ -1,0 +1,81 @@
+### CREATE five documents.
+POST http://localhost:3000/goals HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "New Zealand",
+    "goalScored": 1,
+    "gameDate": "2023-07-20"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/goals HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "Norway",
+    "goalScored": 0,
+    "gameDate": "2023-07-20"
+}
+
+### CREATE 3
+POST http://localhost:3000/goals HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "Sweden",
+    "goalScored": 2,
+    "gameDate": "2023-08-11"
+}
+
+### CREATE 4
+POST http://localhost:3000/goals HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "Japan",
+    "goalScored": 1,
+    "gameDate": "2023-08-11"
+}
+
+### CREATE 5
+POST http://localhost:3000/goals HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "Australia",
+    "goalScored": 7,
+    "gameDate": "2023-08-12"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/goals HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/goals/64d8515ab53c0e620f518f65 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/goals/64dfbd2f36b4f413f7bd8864 HTTP/1.1
+content-type: application/json
+
+{
+    "countryName": "France",
+    "goalScored": 6,
+    "gameDate": "2023-08-12"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/goals/64deec68a201cb6b1fcc4cd5 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/goals HTTP/1.1

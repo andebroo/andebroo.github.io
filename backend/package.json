@@ -1,0 +1,19 @@
+{
+  "name": "fifa23-goals-scored-backend",
+  "version": "2023",
+  "description": "goals scored during the 2023 womens fifa world cup",
+  "main": "goals-controller.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon goals-controller.mjs"
+  },
+  "author": "brooke anderson",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "rest": "^2.0.0"
+  }
+}
